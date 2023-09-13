@@ -1,0 +1,2251 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Listig</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+</head>
+
+<body>
+  <!-- nav bar start -->
+  <nav class="navbar  navbar-expand-lg">
+    <div class="container  p-lg-3 mt-lg-2 ">
+      <a class="navbar-brand  " href="#"><img src="images/LOGO.png" alt="" class="w-100 h-100"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse " id="navbarSupportedContent">
+        <ul class="navbar-nav m-auto mt-0 mb-2 nav_bar mb-lg-0">
+          <li class="nav-item ">
+            <a class="nav-link active p-0 " aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item dropdown px-lg-3 px-0">
+            <a class="nav-link active dropdown-toggle p-0 " href="#" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Categories
+            </a>
+            <ul class="dropdown-menu px-lg-3 px-0 ">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+          <li class="nav-item px-lg-3 px-0">
+            <a class="nav-link active  p-0 " aria-current="page" href="#">Blogs</a>
+          </li>
+
+        </ul>
+        <a href="" class="px-lg-4 "> <img src="images/LR.png" alt=""></a>
+
+        <form class="d-flex  mb-3 mb-lg-0 mt-3 mt-lg-0" role="search">
+          <input class="  search_bar me-2" type="search" placeholder="Search" aria-label="Search">
+        </form>
+
+        <a href="" class="px-lg-3 px-0"> <img src="images/Group 133672.png" alt=""></a>
+        <a href="" class="px-lg-3 px-0"> <img src="images/Group 133671.png" alt=""></a>
+        <a class="btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false">
+          <img src="images/Ellipse 47.png" alt="">
+        </a>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+        <button class="btn add_button ms-3 p-3" type="submit">Post Ad<i class="fa-solid fa-plus plus"></i></button>
+      </div>
+    </div>
+  </nav>
+  <!-- navbar end  -->
+  <!-- side bar whole section start  -->
+  <div class="container">
+    <div class="row mt-lg-3 mt-0">
+      <div class="col-lg-3  ">
+
+        <section class="slider ">
+          <div class="contentcol  d-none d-lg-block">
+            <div class="d-flex justify-content-center ">
+              <img src="images/Ellipse 46.png" alt="" class="mt-5">
+            </div>
+            <p class="text-center text_h mt-3">Natasha Romanoff</p>
+            <div class="d-flex align-items-start text-align-start">
+              <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+
+                <button class="nav-link " id="v-pills-home-tab activity" data-bs-toggle="pill"
+                  data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home"
+                  aria-selected="true"><img src="images/Vector (6).png" alt="" class="px-3">My Activity</button>
+                <button class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill"
+                  data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile"
+                  aria-selected="false"><i class="fa-solid fa-bookmark px-3"></i>Saved</button>
+                <button class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill"
+                  data-bs-target="#v-pills-messages" type="button" role="tab" aria-controls="v-pills-messages"
+                  aria-selected="false"><i class="fa-solid fa-bell px-3"></i>Notifications</button>
+                <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill"
+                  data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings"
+                  aria-selected="false"><i class="fa-solid fa-message px-3"></i>Messages</button>
+                <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-sub"
+                  type="button" role="tab" aria-controls="v-pills-sub" aria-selected="false"><i
+                    class="fa-solid fa-gem px-3"></i>Subcription</button>
+                <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-perfm"
+                  type="button" role="tab" aria-controls="v-pills-perfm" aria-selected="false"><i
+                    class="fa-solid fa-square-poll-vertical px-3"></i>Performance</button>
+                <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill"
+                  data-bs-target="#v-pills-balance" type="button" role="tab" aria-controls="v-pills-balance"
+                  aria-selected="false"><i class="fa-solid fa-money-bill px-3"></i>My Balance</button>
+                <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-st"
+                  type="button" role="tab" aria-controls="v-pills-st" aria-selected="false"><i
+                    class="fa-solid fa-gear px-3"></i>Setting</button>
+                <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-log"
+                  type="button" role="tab" aria-controls="v-pills-log" aria-selected="false"><i
+                    class="fa-solid fa-right-from-bracket px-3"></i>Log out</button>
+
+              </div>
+            </div>
+
+          </div>
+        </section>
+        <!-- offcanva -->
+        <div class="d-flex   d-lg-none d-block justify-content-end mt-3 mb-3">
+          <button class="btn offcanva_btn  justify-content-end" type="button" data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">View Profile</button>
+
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+            <div class="offcanvas-header">
+              <h5 id="offcanvasRightLabel">Welcome to Profile</h5>
+              <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <section class="slider ">
+                <div class="contentcol  ">
+                  <div class="d-flex justify-content-center ">
+                    <img src="images/Ellipse 46.png" alt="" class="mt-5">
+                  </div>
+                  <p class="text-center text_h mt-3">Natasha Romanoff</p>
+                  <div class="d-flex align-items-start text-align-start">
+                    <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist"
+                      aria-orientation="vertical">
+
+                      <button class="nav-link " id="v-pills-home-tab activity" data-bs-toggle="pill"
+                        data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home"
+                        aria-selected="true"><img src="images/Vector (6).png" alt="" class="px-3">My Activity</button>
+                      <button class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill"
+                        data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile"
+                        aria-selected="false"><i class="fa-solid fa-bookmark px-3"></i>Saved</button>
+                      <button class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill"
+                        data-bs-target="#v-pills-messages" type="button" role="tab" aria-controls="v-pills-messages"
+                        aria-selected="false"><i class="fa-solid fa-bell px-3"></i>Notifications</button>
+                      <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill"
+                        data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings"
+                        aria-selected="false"><i class="fa-solid fa-message px-3"></i>Messages</button>
+                      <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill"
+                        data-bs-target="#v-pills-sub" type="button" role="tab" aria-controls="v-pills-sub"
+                        aria-selected="false"><i class="fa-solid fa-gem px-3"></i>Subcription</button>
+                      <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill"
+                        data-bs-target="#v-pills-perfm" type="button" role="tab" aria-controls="v-pills-perfm"
+                        aria-selected="false"><i class="fa-solid fa-square-poll-vertical px-3"></i>Performance</button>
+                      <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill"
+                        data-bs-target="#v-pills-balance" type="button" role="tab" aria-controls="v-pills-balance"
+                        aria-selected="false"><i class="fa-solid fa-money-bill px-3"></i>My Balance</button>
+                      <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill"
+                        data-bs-target="#v-pills-st" type="button" role="tab" aria-controls="v-pills-st"
+                        aria-selected="false"><i class="fa-solid fa-gear px-3"></i>Setting</button>
+                      <button class="nav-link" id="v-pills-setting-tab" data-bs-toggle="pill"
+                        data-bs-target="#v-pills-log" type="button" role="tab" aria-controls="v-pills-log"
+                        aria-selected="false"><i class="fa-solid fa-gear px-3"></i>Logout</button>
+
+                    </div>
+
+                  </div>
+                </div>
+              </section>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="col-lg-9">
+
+        <!-- row1 -->
+
+        <div class="tab-content" id="v-pills-tabContent">
+          <!-- my activity section start -->
+          <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
+            <div class="row filter_row ">
+              <div class="col-sm-3">
+                <button class="filter_btn">Active</button>
+              </div>
+              <div class=" col-sm-3 filter_text">
+                <button class="filter_btn2">Non-Active</button>
+              </div>
+              <div class="col-sm-3 filter_text">
+                <button class="filter_btn2">Pending</button>
+              </div>
+              <div class="col-sm-3 filter_text">
+                <button class="filter_btn2">Archive</button>
+              </div>
+
+            </div>
+            <!-- row2 -->
+            <div class="row cards_row ">
+              <div class="col-lg-4 col-sm-6 ">
+                <div class="card bcard mt-lg-0 mt-3">
+                  <div class="cardmainimg">
+                    <img src="/images/Rectangle 6.png" class="card-img-top" alt="..." />
+                    <div class="tag p-2">
+                      <h3 class="text-white mb-0 px-1">$ 20,000</h3>
+                    </div>
+                  </div>
+                  <div class="card-body card_title">
+                    <a href="">
+                      <p class="text_h">Chevelotte Maike</p>
+                    </a>
+                    <p class="para"> <i class="fa-solid fa-location-dot  card_icon pe-1 "></i>264 Gregory
+                      Ave.Southfield, MI
+                      48076</p>
+                    <div class="  hover-container">
+                      <div class="d-flex justify-content-between hover-trigger">
+                        <p class="card-text light_text">Milage</p>
+                        <p class="card-text text_h">100,325 Kms</p>
+                      </div>
+                      <div class="d-flex justify-content-between hover-trigger">
+                        <p class="card-text light_text">Version</p>
+                        <p class="card-text text_h">Automatic</p>
+                      </div>
+                      <div class="d-flex justify-content-between hover-trigger">
+                        <p class="card-text light_text ">Fuel</p>
+                        <p class="card-text text_h">Petrol</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="d-flex mt-1 justify-content-between">
+                  <div class=" views px-1 ">
+                    <p class="mb-0"><img src="images/Group 10.png" alt="" class="pe-2  mb-0">10k</p>
+                  </div>
+                  <div class="d-flex mt-1 h-100 ">
+                    <a href=""> <img src="images/Vector (3).png" alt="" class="px-2 "></a>
+                    <a href=""> <img src="images/Vector (4).png" alt="" class="px-2 "></a>
+                    <a href=""> <img src="images/Vector (5).png" alt="" class="px-2"></a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-sm-6 ">
+                <div class="card bcard mt-lg-0 mt-3">
+                  <div class="cardmainimg">
+                    <img src="/images/Rectangle 6.png" class="card-img-top" alt="..." />
+                    <div class="tag p-2">
+                      <h3 class="text-white mb-0 px-1">$ 20,000</h3>
+                    </div>
+                  </div>
+                  <div class="card-body card_title">
+                    <a href="">
+                      <p class="text_h">Chevelotte Maike</p>
+                    </a>
+                    <p class="para"> <i class="fa-solid fa-location-dot  card_icon pe-1 "></i>264 Gregory
+                      Ave.Southfield, MI
+                      48076</p>
+                    <div class="  hover-container">
+                      <div class="d-flex justify-content-between hover-trigger">
+                        <p class="card-text light_text">Milage</p>
+                        <p class="card-text text_h">100,325 Kms</p>
+                      </div>
+                      <div class="d-flex justify-content-between hover-trigger">
+                        <p class="card-text light_text">Version</p>
+                        <p class="card-text text_h">Automatic</p>
+                      </div>
+                      <div class="d-flex justify-content-between hover-trigger">
+                        <p class="card-text light_text ">Fuel</p>
+                        <p class="card-text text_h">Petrol</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="d-flex mt-1 justify-content-between">
+                  <div class=" views px-1 ">
+                    <p class="mb-0"><img src="images/Group 10.png" alt="" class="pe-2  mb-0">10k</p>
+                  </div>
+                  <div class="d-flex mt-1 h-100 ">
+                    <a href=""> <img src="images/Vector (3).png" alt="" class="px-2 "></a>
+                    <a href=""><img src="images/Vector (4).png" alt="" class="px-2 "> </a>
+                    <a href=""> <img src="images/Vector (5).png" alt="" class="px-2"> </a>
+                  </div>
+
+                </div>
+              </div>
+              <div class="col-lg-4 col-sm-6 ">
+                <div class="card bcard mt-lg-0 mt-3">
+                  <div class="cardmainimg">
+                    <img src="/images/Rectangle 6.png" class="card-img-top" alt="..." />
+                    <div class="tag p-2">
+                      <h3 class="text-white mb-0 px-1">$ 20,000</h3>
+                    </div>
+                  </div>
+                  <div class="card-body card_title">
+                    <a href="">
+                      <p class="text_h">Chevelotte Maike</p>
+                    </a>
+                    <p class="para"> <i class="fa-solid fa-location-dot  card_icon pe-1 "></i>264 Gregory
+                      Ave.Southfield, MI
+                      48076</p>
+                    <div class="  hover-container">
+                      <div class="d-flex justify-content-between hover-trigger">
+                        <p class="card-text light_text">Milage</p>
+                        <p class="card-text text_h">100,325 Kms</p>
+                      </div>
+                      <div class="d-flex justify-content-between hover-trigger">
+                        <p class="card-text light_text">Version</p>
+                        <p class="card-text text_h">Automatic</p>
+                      </div>
+                      <div class="d-flex justify-content-between hover-trigger">
+                        <p class="card-text light_text ">Fuel</p>
+                        <p class="card-text text_h">Petrol</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="d-flex mt-1 justify-content-between">
+                  <div class=" views px-1 ">
+                    <p class="mb-0"><img src="images/Group 10.png" alt="" class="pe-2  mb-0">10k</p>
+                  </div>
+                  <div class="d-flex mt-1 h-100 ">
+                    <a href=""> <img src="images/Vector (3).png" alt="" class="px-2 "> </a>
+                    <a href=""> <img src="images/Vector (4).png" alt="" class="px-2 "></a>
+                    <a href=""> <img src="images/Vector (5).png" alt="" class="px-2"></a>
+                  </div>
+
+                </div>
+              </div>
+
+            </div>
+            <div class="row mt-lg-5 mt-1  ">
+              <div class="col-lg-4 col-sm-6 ">
+                <div class="card bcard mt-lg-0 mt-3">
+                  <div class="cardmainimg">
+                    <img src="/images/Rectangle 6.png" class="card-img-top" alt="..." />
+                    <div class="tag p-2">
+                      <h3 class="text-white mb-0 px-1">$ 20,000</h3>
+                    </div>
+                  </div>
+                  <div class="card-body card_title">
+                    <a href="">
+                      <p class="text_h">Chevelotte Maike</p>
+                    </a>
+                    <p class="para"> <i class="fa-solid fa-location-dot  card_icon pe-1 "></i>264 Gregory
+                      Ave.Southfield, MI
+                      48076</p>
+                    <div class="  hover-container">
+                      <div class="d-flex justify-content-between hover-trigger">
+                        <p class="card-text light_text">Milage</p>
+                        <p class="card-text text_h">100,325 Kms</p>
+                      </div>
+                      <div class="d-flex justify-content-between hover-trigger">
+                        <p class="card-text light_text">Version</p>
+                        <p class="card-text text_h">Automatic</p>
+                      </div>
+                      <div class="d-flex justify-content-between hover-trigger">
+                        <p class="card-text light_text ">Fuel</p>
+                        <p class="card-text text_h">Petrol</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="d-flex mt-1 justify-content-between">
+                  <div class=" views px-1 ">
+                    <p class="mb-0"><img src="images/Group 10.png" alt="" class="pe-2  mb-0">10k</p>
+                  </div>
+                  <div class="d-flex mt-1 h-100 ">
+                    <a href=""> <img src="images/Vector (3).png" alt="" class="px-2 "></a>
+                    <a href=""> <img src="images/Vector (4).png" alt="" class="px-2 "></a>
+                    <a href=""> <img src="images/Vector (5).png" alt="" class="px-2"></a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-sm-6 ">
+                <div class="card bcard mt-lg-0 mt-3">
+                  <div class="cardmainimg">
+                    <img src="/images/Rectangle 6.png" class="card-img-top" alt="..." />
+                    <div class="tag p-2">
+                      <h3 class="text-white mb-0 px-1">$ 20,000</h3>
+                    </div>
+                  </div>
+                  <div class="card-body card_title">
+                    <a href="">
+                      <p class="text_h">Chevelotte Maike</p>
+                    </a>
+                    <p class="para"> <i class="fa-solid fa-location-dot  card_icon pe-1 "></i>264 Gregory
+                      Ave.Southfield, MI
+                      48076</p>
+                    <div class="  hover-container">
+                      <div class="d-flex justify-content-between hover-trigger">
+                        <p class="card-text light_text">Milage</p>
+                        <p class="card-text text_h">100,325 Kms</p>
+                      </div>
+                      <div class="d-flex justify-content-between hover-trigger">
+                        <p class="card-text light_text">Version</p>
+                        <p class="card-text text_h">Automatic</p>
+                      </div>
+                      <div class="d-flex justify-content-between hover-trigger">
+                        <p class="card-text light_text ">Fuel</p>
+                        <p class="card-text text_h">Petrol</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="d-flex mt-1 justify-content-between">
+                  <div class=" views px-1 ">
+                    <p class="mb-0"><img src="images/Group 10.png" alt="" class="pe-2  mb-0">10k</p>
+                  </div>
+                  <div class="d-flex mt-1 h-100 ">
+                    <a href=""> <img src="images/Vector (3).png" alt="" class="px-2 "></a>
+                    <a href=""><img src="images/Vector (4).png" alt="" class="px-2 "> </a>
+                    <a href=""> <img src="images/Vector (5).png" alt="" class="px-2"> </a>
+                  </div>
+
+                </div>
+              </div>
+              <div class="col-lg-4 col-sm-6 ">
+                <div class="card bcard mt-lg-0 mt-3">
+                  <div class="cardmainimg">
+                    <img src="/images/Rectangle 6.png" class="card-img-top" alt="..." />
+                    <div class="tag p-2">
+                      <h3 class="text-white mb-0 px-1">$ 20,000</h3>
+                    </div>
+                  </div>
+                  <div class="card-body card_title">
+                    <a href="">
+                      <p class="text_h">Chevelotte Maike</p>
+                    </a>
+                    <p class="para"> <i class="fa-solid fa-location-dot  card_icon pe-1 "></i>264 Gregory
+                      Ave.Southfield, MI
+                      48076</p>
+                    <div class="  hover-container">
+                      <div class="d-flex justify-content-between hover-trigger">
+                        <p class="card-text light_text">Milage</p>
+                        <p class="card-text text_h">100,325 Kms</p>
+                      </div>
+                      <div class="d-flex justify-content-between hover-trigger">
+                        <p class="card-text light_text">Version</p>
+                        <p class="card-text text_h">Automatic</p>
+                      </div>
+                      <div class="d-flex justify-content-between hover-trigger">
+                        <p class="card-text light_text ">Fuel</p>
+                        <p class="card-text text_h">Petrol</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="d-flex mt-1 justify-content-between">
+                  <div class=" views px-1 ">
+                    <p class="mb-0"><img src="images/Group 10.png" alt="" class="pe-2  mb-0">10k</p>
+                  </div>
+                  <div class="d-flex mt-1 h-100 ">
+                    <a href=""> <img src="images/Vector (3).png" alt="" class="px-2 "> </a>
+                    <a href=""> <img src="images/Vector (4).png" alt="" class="px-2 "></a>
+                    <a href=""> <img src="images/Vector (5).png" alt="" class="px-2"></a>
+                  </div>
+
+                </div>
+              </div>
+
+            </div>
+            <div class="row mt-lg-5 mt-1 ">
+              <div class="col-lg-4 col-sm-6 ">
+                <div class="card bcard mt-lg-0 mt-3">
+                  <div class="cardmainimg">
+                    <img src="/images/Rectangle 6.png" class="card-img-top" alt="..." />
+                    <div class="tag p-2">
+                      <h3 class="text-white mb-0 px-1">$ 20,000</h3>
+                    </div>
+                  </div>
+                  <div class="card-body card_title">
+                    <a href="">
+                      <p class="text_h">Chevelotte Maike</p>
+                    </a>
+                    <p class="para"> <i class="fa-solid fa-location-dot  card_icon pe-1 "></i>264 Gregory
+                      Ave.Southfield, MI
+                      48076</p>
+                    <div class="  hover-container">
+                      <div class="d-flex justify-content-between hover-trigger">
+                        <p class="card-text light_text">Milage</p>
+                        <p class="card-text text_h">100,325 Kms</p>
+                      </div>
+                      <div class="d-flex justify-content-between hover-trigger">
+                        <p class="card-text light_text">Version</p>
+                        <p class="card-text text_h">Automatic</p>
+                      </div>
+                      <div class="d-flex justify-content-between hover-trigger">
+                        <p class="card-text light_text ">Fuel</p>
+                        <p class="card-text text_h">Petrol</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="d-flex mt-1 justify-content-between">
+                  <div class=" views px-1 ">
+                    <p class="mb-0"><img src="images/Group 10.png" alt="" class="pe-2  mb-0">10k</p>
+                  </div>
+                  <div class="d-flex mt-1 h-100 ">
+                    <a href=""> <img src="images/Vector (3).png" alt="" class="px-2 "></a>
+                    <a href=""> <img src="images/Vector (4).png" alt="" class="px-2 "></a>
+                    <a href=""> <img src="images/Vector (5).png" alt="" class="px-2"></a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-sm-6 ">
+                <div class="card bcard mt-lg-0 mt-3">
+                  <div class="cardmainimg">
+                    <img src="/images/Rectangle 6.png" class="card-img-top" alt="..." />
+                    <div class="tag p-2">
+                      <h3 class="text-white mb-0 px-1">$ 20,000</h3>
+                    </div>
+                  </div>
+                  <div class="card-body card_title">
+                    <a href="">
+                      <p class="text_h">Chevelotte Maike</p>
+                    </a>
+                    <p class="para"> <i class="fa-solid fa-location-dot  card_icon pe-1 "></i>264 Gregory
+                      Ave.Southfield, MI
+                      48076</p>
+                    <div class="  hover-container">
+                      <div class="d-flex justify-content-between hover-trigger">
+                        <p class="card-text light_text">Milage</p>
+                        <p class="card-text text_h">100,325 Kms</p>
+                      </div>
+                      <div class="d-flex justify-content-between hover-trigger">
+                        <p class="card-text light_text">Version</p>
+                        <p class="card-text text_h">Automatic</p>
+                      </div>
+                      <div class="d-flex justify-content-between hover-trigger">
+                        <p class="card-text light_text ">Fuel</p>
+                        <p class="card-text text_h">Petrol</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="d-flex mt-1 justify-content-between">
+                  <div class=" views px-1 ">
+                    <p class="mb-0"><img src="images/Group 10.png" alt="" class="pe-2  mb-0">10k</p>
+                  </div>
+                  <div class="d-flex mt-1 h-100 ">
+                    <a href=""> <img src="images/Vector (3).png" alt="" class="px-2 "></a>
+                    <a href=""><img src="images/Vector (4).png" alt="" class="px-2 "> </a>
+                    <a href=""> <img src="images/Vector (5).png" alt="" class="px-2"> </a>
+                  </div>
+
+                </div>
+              </div>
+              <div class="col-lg-4 col-sm-6 ">
+                <div class="card bcard mt-lg-0 mt-3">
+                  <div class="cardmainimg">
+                    <img src="/images/Rectangle 6.png" class="card-img-top" alt="..." />
+                    <div class="tag p-2">
+                      <h3 class="text-white mb-0 px-1">$ 20,000</h3>
+                    </div>
+                  </div>
+                  <div class="card-body card_title">
+                    <a href="">
+                      <p class="text_h">Chevelotte Maike</p>
+                    </a>
+                    <p class="para"> <i class="fa-solid fa-location-dot  card_icon pe-1 "></i>264 Gregory
+                      Ave.Southfield, MI
+                      48076</p>
+                    <div class="  hover-container">
+                      <div class="d-flex justify-content-between hover-trigger">
+                        <p class="card-text light_text">Milage</p>
+                        <p class="card-text text_h">100,325 Kms</p>
+                      </div>
+                      <div class="d-flex justify-content-between hover-trigger">
+                        <p class="card-text light_text">Version</p>
+                        <p class="card-text text_h">Automatic</p>
+                      </div>
+                      <div class="d-flex justify-content-between hover-trigger">
+                        <p class="card-text light_text ">Fuel</p>
+                        <p class="card-text text_h">Petrol</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="d-flex mt-1 justify-content-between">
+                  <div class=" views px-1 ">
+                    <p class="mb-0"><img src="images/Group 10.png" alt="" class="pe-2  mb-0">10k</p>
+                  </div>
+                  <div class="d-flex mt-1 h-100 ">
+                    <a href=""> <img src="images/Vector (3).png" alt="" class="px-2 "> </a>
+                    <a href=""> <img src="images/Vector (4).png" alt="" class="px-2 "></a>
+                    <a href=""> <img src="images/Vector (5).png" alt="" class="px-2"></a>
+                  </div>
+
+                </div>
+              </div>
+
+            </div>
+            <div class="row mt-lg-5 mt-1 ">
+              <div class="col-lg-4 col-sm-6 ">
+                <div class="card bcard mt-lg-0 mt-3">
+                  <div class="cardmainimg">
+                    <img src="/images/Rectangle 6.png" class="card-img-top" alt="..." />
+                    <div class="tag p-2">
+                      <h3 class="text-white mb-0 px-1">$ 20,000</h3>
+                    </div>
+                  </div>
+                  <div class="card-body card_title">
+                    <a href="">
+                      <p class="text_h">Chevelotte Maike</p>
+                    </a>
+                    <p class="para"> <i class="fa-solid fa-location-dot  card_icon pe-1 "></i>264 Gregory
+                      Ave.Southfield, MI
+                      48076</p>
+                    <div class="  hover-container">
+                      <div class="d-flex justify-content-between hover-trigger">
+                        <p class="card-text light_text">Milage</p>
+                        <p class="card-text text_h">100,325 Kms</p>
+                      </div>
+                      <div class="d-flex justify-content-between hover-trigger">
+                        <p class="card-text light_text">Version</p>
+                        <p class="card-text text_h">Automatic</p>
+                      </div>
+                      <div class="d-flex justify-content-between hover-trigger">
+                        <p class="card-text light_text ">Fuel</p>
+                        <p class="card-text text_h">Petrol</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="d-flex mt-1 justify-content-between">
+                  <div class=" views px-1 ">
+                    <p class="mb-0"><img src="images/Group 10.png" alt="" class="pe-2  mb-0">10k</p>
+                  </div>
+                  <div class="d-flex mt-1 h-100 ">
+                    <a href=""> <img src="images/Vector (3).png" alt="" class="px-2 "></a>
+                    <a href=""> <img src="images/Vector (4).png" alt="" class="px-2 "></a>
+                    <a href=""> <img src="images/Vector (5).png" alt="" class="px-2"></a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-sm-6 ">
+                <div class="card bcard mt-lg-0 mt-3">
+                  <div class="cardmainimg">
+                    <img src="/images/Rectangle 6.png" class="card-img-top" alt="..." />
+                    <div class="tag p-2">
+                      <h3 class="text-white mb-0 px-1">$ 20,000</h3>
+                    </div>
+                  </div>
+                  <div class="card-body card_title">
+                    <a href="">
+                      <p class="text_h">Chevelotte Maike</p>
+                    </a>
+                    <p class="para"> <i class="fa-solid fa-location-dot  card_icon pe-1 "></i>264 Gregory
+                      Ave.Southfield, MI
+                      48076</p>
+                    <div class="  hover-container">
+                      <div class="d-flex justify-content-between hover-trigger">
+                        <p class="card-text light_text">Milage</p>
+                        <p class="card-text text_h">100,325 Kms</p>
+                      </div>
+                      <div class="d-flex justify-content-between hover-trigger">
+                        <p class="card-text light_text">Version</p>
+                        <p class="card-text text_h">Automatic</p>
+                      </div>
+                      <div class="d-flex justify-content-between hover-trigger">
+                        <p class="card-text light_text ">Fuel</p>
+                        <p class="card-text text_h">Petrol</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="d-flex mt-1 justify-content-between">
+                  <div class=" views px-1 ">
+                    <p class="mb-0"><img src="images/Group 10.png" alt="" class="pe-2  mb-0">10k</p>
+                  </div>
+                  <div class="d-flex mt-1 h-100 ">
+                    <a href=""> <img src="images/Vector (3).png" alt="" class="px-2 "></a>
+                    <a href=""><img src="images/Vector (4).png" alt="" class="px-2 "> </a>
+                    <a href=""> <img src="images/Vector (5).png" alt="" class="px-2"> </a>
+                  </div>
+
+                </div>
+              </div>
+              <div class="col-lg-4 col-sm-6 ">
+                <div class="card bcard mt-lg-0 mt-3">
+                  <div class="cardmainimg">
+                    <img src="/images/Rectangle 6.png" class="card-img-top" alt="..." />
+                    <div class="tag p-2">
+                      <h3 class="text-white mb-0 px-1">$ 20,000</h3>
+                    </div>
+                  </div>
+                  <div class="card-body card_title">
+                    <a href="">
+                      <p class="text_h">Chevelotte Maike</p>
+                    </a>
+                    <p class="para"> <i class="fa-solid fa-location-dot  card_icon pe-1 "></i>264 Gregory
+                      Ave.Southfield, MI
+                      48076</p>
+                    <div class="  hover-container">
+                      <div class="d-flex justify-content-between hover-trigger">
+                        <p class="card-text light_text">Milage</p>
+                        <p class="card-text text_h">100,325 Kms</p>
+                      </div>
+                      <div class="d-flex justify-content-between hover-trigger">
+                        <p class="card-text light_text">Version</p>
+                        <p class="card-text text_h">Automatic</p>
+                      </div>
+                      <div class="d-flex justify-content-between hover-trigger">
+                        <p class="card-text light_text ">Fuel</p>
+                        <p class="card-text text_h">Petrol</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="d-flex mt-1 justify-content-between">
+                  <div class=" views px-1 ">
+                    <p class="mb-0"><img src="images/Group 10.png" alt="" class="pe-2  mb-0">10k</p>
+                  </div>
+                  <div class="d-flex mt-1 h-100 ">
+                    <a href=""> <img src="images/Vector (3).png" alt="" class="px-2 "> </a>
+                    <a href=""> <img src="images/Vector (4).png" alt="" class="px-2 "></a>
+                    <a href=""> <img src="images/Vector (5).png" alt="" class="px-2"></a>
+                  </div>
+
+                </div>
+              </div>
+
+            </div>
+            <div class="row mt-lg-5 mt-1 ">
+              <div class="col-lg-4 col-sm-6 ">
+                <div class="card bcard mt-lg-0 mt-3">
+                  <div class="cardmainimg">
+                    <img src="/images/Rectangle 6.png" class="card-img-top" alt="..." />
+                    <div class="tag p-2">
+                      <h3 class="text-white mb-0 px-1">$ 20,000</h3>
+                    </div>
+                  </div>
+                  <div class="card-body card_title">
+                    <a href="">
+                      <p class="text_h">Chevelotte Maike</p>
+                    </a>
+                    <p class="para"> <i class="fa-solid fa-location-dot  card_icon pe-1 "></i>264 Gregory
+                      Ave.Southfield, MI
+                      48076</p>
+                    <div class="  hover-container">
+                      <div class="d-flex justify-content-between hover-trigger">
+                        <p class="card-text light_text">Milage</p>
+                        <p class="card-text text_h">100,325 Kms</p>
+                      </div>
+                      <div class="d-flex justify-content-between hover-trigger">
+                        <p class="card-text light_text">Version</p>
+                        <p class="card-text text_h">Automatic</p>
+                      </div>
+                      <div class="d-flex justify-content-between hover-trigger">
+                        <p class="card-text light_text ">Fuel</p>
+                        <p class="card-text text_h">Petrol</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="d-flex mt-1 justify-content-between">
+                  <div class=" views px-1 ">
+                    <p class="mb-0"><img src="images/Group 10.png" alt="" class="pe-2  mb-0">10k</p>
+                  </div>
+                  <div class="d-flex mt-1 h-100 ">
+                    <a href=""> <img src="images/Vector (3).png" alt="" class="px-2 "></a>
+                    <a href=""> <img src="images/Vector (4).png" alt="" class="px-2 "></a>
+                    <a href=""> <img src="images/Vector (5).png" alt="" class="px-2"></a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-sm-6 ">
+                <div class="card bcard mt-lg-0 mt-3">
+                  <div class="cardmainimg">
+                    <img src="/images/Rectangle 6.png" class="card-img-top" alt="..." />
+                    <div class="tag p-2">
+                      <h3 class="text-white mb-0 px-1">$ 20,000</h3>
+                    </div>
+                  </div>
+                  <div class="card-body card_title">
+                    <a href="">
+                      <p class="text_h">Chevelotte Maike</p>
+                    </a>
+                    <p class="para"> <i class="fa-solid fa-location-dot  card_icon pe-1 "></i>264 Gregory
+                      Ave.Southfield, MI
+                      48076</p>
+                    <div class="  hover-container">
+                      <div class="d-flex justify-content-between hover-trigger">
+                        <p class="card-text light_text">Milage</p>
+                        <p class="card-text text_h">100,325 Kms</p>
+                      </div>
+                      <div class="d-flex justify-content-between hover-trigger">
+                        <p class="card-text light_text">Version</p>
+                        <p class="card-text text_h">Automatic</p>
+                      </div>
+                      <div class="d-flex justify-content-between hover-trigger">
+                        <p class="card-text light_text ">Fuel</p>
+                        <p class="card-text text_h">Petrol</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="d-flex mt-1 justify-content-between">
+                  <div class=" views px-1 ">
+                    <p class="mb-0"><img src="images/Group 10.png" alt="" class="pe-2  mb-0">10k</p>
+                  </div>
+                  <div class="d-flex mt-1 h-100 ">
+                    <a href=""> <img src="images/Vector (3).png" alt="" class="px-2 "></a>
+                    <a href=""><img src="images/Vector (4).png" alt="" class="px-2 "> </a>
+                    <a href=""> <img src="images/Vector (5).png" alt="" class="px-2"> </a>
+                  </div>
+
+                </div>
+              </div>
+              <div class="col-lg-4 col-sm-6 ">
+                <div class="card bcard mt-lg-0 mt-3">
+                  <div class="cardmainimg">
+                    <img src="/images/Rectangle 6.png" class="card-img-top" alt="..." />
+                    <div class="tag p-2">
+                      <h3 class="text-white mb-0 px-1">$ 20,000</h3>
+                    </div>
+                  </div>
+                  <div class="card-body card_title">
+                    <a href="">
+                      <p class="text_h">Chevelotte Maike</p>
+                    </a>
+                    <p class="para"> <i class="fa-solid fa-location-dot  card_icon pe-1 "></i>264 Gregory
+                      Ave.Southfield, MI
+                      48076</p>
+                    <div class="  hover-container">
+                      <div class="d-flex justify-content-between hover-trigger">
+                        <p class="card-text light_text">Milage</p>
+                        <p class="card-text text_h">100,325 Kms</p>
+                      </div>
+                      <div class="d-flex justify-content-between hover-trigger">
+                        <p class="card-text light_text">Version</p>
+                        <p class="card-text text_h">Automatic</p>
+                      </div>
+                      <div class="d-flex justify-content-between hover-trigger">
+                        <p class="card-text light_text ">Fuel</p>
+                        <p class="card-text text_h">Petrol</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="d-flex mt-1 justify-content-between">
+                  <div class=" views px-1 ">
+                    <p class="mb-0"><img src="images/Group 10.png" alt="" class="pe-2  mb-0">10k</p>
+                  </div>
+                  <div class="d-flex mt-1 h-100 ">
+                    <a href=""> <img src="images/Vector (3).png" alt="" class="px-2 "> </a>
+                    <a href=""> <img src="images/Vector (4).png" alt="" class="px-2 "></a>
+                    <a href=""> <img src="images/Vector (5).png" alt="" class="px-2"></a>
+                  </div>
+
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <!-- my activity section end  -->
+
+          <!-- Saved section start -->
+          <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+
+            <div class="row cards_row ">
+              <div class="col-lg-4 col-sm-6 ">
+                <div class="card bcard mt-lg-0 mt-3">
+                  <div class="cardmainimg">
+                    <img src="/images/Rectangle 6.png" class="card-img-top" alt="..." />
+                    <div class="tag p-2">
+                      <h3 class="text-white mb-0 px-1">$ 20,000</h3>
+                    </div>
+                  </div>
+                  <div class="card-body card_title">
+                    <a href="">
+                      <p class="text_h">Chevelotte Maike</p>
+                    </a>
+                    <p class="para"> <i class="fa-solid fa-location-dot  card_icon pe-1 "></i>264 Gregory
+                      Ave.Southfield, MI
+                      48076</p>
+                    <div class="  hover-container">
+                      <div class="d-flex justify-content-between hover-trigger">
+                        <p class="card-text light_text">Milage</p>
+                        <p class="card-text text_h">100,325 Kms</p>
+                      </div>
+                      <div class="d-flex justify-content-between hover-trigger">
+                        <p class="card-text light_text">Version</p>
+                        <p class="card-text text_h">Automatic</p>
+                      </div>
+                      <div class="d-flex justify-content-between hover-trigger">
+                        <p class="card-text light_text ">Fuel</p>
+                        <p class="card-text text_h">Petrol</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="d-flex mt-1 justify-content-between">
+                  <div class=" views px-1 ">
+                    <p class="mb-0"><img src="images/Group 10.png" alt="" class="pe-2  mb-0">10k</p>
+                  </div>
+                  <div class="d-flex mt-1 h-100 ">
+                    <a href=""> <img src="images/Vector (3).png" alt="" class="px-2 "></a>
+                    <a href=""> <img src="images/Vector (4).png" alt="" class="px-2 "></a>
+                    <a href=""> <img src="images/Vector (5).png" alt="" class="px-2"></a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-sm-6 ">
+                <div class="card bcard mt-lg-0 mt-3">
+                  <div class="cardmainimg">
+                    <img src="/images/Rectangle 6.png" class="card-img-top" alt="..." />
+                    <div class="tag p-2">
+                      <h3 class="text-white mb-0 px-1">$ 20,000</h3>
+                    </div>
+                  </div>
+                  <div class="card-body card_title">
+                    <a href="">
+                      <p class="text_h">Chevelotte Maike</p>
+                    </a>
+                    <p class="para"> <i class="fa-solid fa-location-dot  card_icon pe-1 "></i>264 Gregory
+                      Ave.Southfield, MI
+                      48076</p>
+                    <div class="  hover-container">
+                      <div class="d-flex justify-content-between hover-trigger">
+                        <p class="card-text light_text">Milage</p>
+                        <p class="card-text text_h">100,325 Kms</p>
+                      </div>
+                      <div class="d-flex justify-content-between hover-trigger">
+                        <p class="card-text light_text">Version</p>
+                        <p class="card-text text_h">Automatic</p>
+                      </div>
+                      <div class="d-flex justify-content-between hover-trigger">
+                        <p class="card-text light_text ">Fuel</p>
+                        <p class="card-text text_h">Petrol</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="d-flex mt-1 justify-content-between">
+                  <div class=" views px-1 ">
+                    <p class="mb-0"><img src="images/Group 10.png" alt="" class="pe-2  mb-0">10k</p>
+                  </div>
+                  <div class="d-flex mt-1 h-100 ">
+                    <a href=""> <img src="images/Vector (3).png" alt="" class="px-2 "></a>
+                    <a href=""><img src="images/Vector (4).png" alt="" class="px-2 "> </a>
+                    <a href=""> <img src="images/Vector (5).png" alt="" class="px-2"> </a>
+                  </div>
+
+                </div>
+              </div>
+              <div class="col-lg-4 col-sm-6 ">
+                <div class="card bcard mt-lg-0 mt-3">
+                  <div class="cardmainimg">
+                    <img src="/images/Rectangle 6.png" class="card-img-top" alt="..." />
+                    <div class="tag p-2">
+                      <h3 class="text-white mb-0 px-1">$ 20,000</h3>
+                    </div>
+                  </div>
+                  <div class="card-body card_title">
+                    <a href="">
+                      <p class="text_h">Chevelotte Maike</p>
+                    </a>
+                    <p class="para"> <i class="fa-solid fa-location-dot  card_icon pe-1 "></i>264 Gregory
+                      Ave.Southfield, MI
+                      48076</p>
+                    <div class="  hover-container">
+                      <div class="d-flex justify-content-between hover-trigger">
+                        <p class="card-text light_text">Milage</p>
+                        <p class="card-text text_h">100,325 Kms</p>
+                      </div>
+                      <div class="d-flex justify-content-between hover-trigger">
+                        <p class="card-text light_text">Version</p>
+                        <p class="card-text text_h">Automatic</p>
+                      </div>
+                      <div class="d-flex justify-content-between hover-trigger">
+                        <p class="card-text light_text ">Fuel</p>
+                        <p class="card-text text_h">Petrol</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="d-flex mt-1 justify-content-between">
+                  <div class=" views px-1 ">
+                    <p class="mb-0"><img src="images/Group 10.png" alt="" class="pe-2  mb-0">10k</p>
+                  </div>
+                  <div class="d-flex mt-1 h-100 ">
+                    <a href=""> <img src="images/Vector (3).png" alt="" class="px-2 "> </a>
+                    <a href=""> <img src="images/Vector (4).png" alt="" class="px-2 "></a>
+                    <a href=""> <img src="images/Vector (5).png" alt="" class="px-2"></a>
+                  </div>
+
+                </div>
+              </div>
+
+            </div>
+            <div class="row mt-lg-1 mt-1  ">
+              <div class="col-lg-4 col-sm-6 ">
+                <div class="card bcard mt-lg-0 mt-3">
+                  <div class="cardmainimg">
+                    <img src="/images/Rectangle 6.png" class="card-img-top" alt="..." />
+                    <div class="tag p-2">
+                      <h3 class="text-white mb-0 px-1">$ 20,000</h3>
+                    </div>
+                  </div>
+                  <div class="card-body card_title">
+                    <a href="">
+                      <p class="text_h">Chevelotte Maike</p>
+                    </a>
+                    <p class="para"> <i class="fa-solid fa-location-dot  card_icon pe-1 "></i>264 Gregory
+                      Ave.Southfield, MI
+                      48076</p>
+                    <div class="  hover-container">
+                      <div class="d-flex justify-content-between hover-trigger">
+                        <p class="card-text light_text">Milage</p>
+                        <p class="card-text text_h">100,325 Kms</p>
+                      </div>
+                      <div class="d-flex justify-content-between hover-trigger">
+                        <p class="card-text light_text">Version</p>
+                        <p class="card-text text_h">Automatic</p>
+                      </div>
+                      <div class="d-flex justify-content-between hover-trigger">
+                        <p class="card-text light_text ">Fuel</p>
+                        <p class="card-text text_h">Petrol</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="d-flex mt-1 justify-content-between">
+                  <div class=" views px-1 ">
+                    <p class="mb-0"><img src="images/Group 10.png" alt="" class="pe-2  mb-0">10k</p>
+                  </div>
+                  <div class="d-flex mt-1 h-100 ">
+                    <a href=""> <img src="images/Vector (3).png" alt="" class="px-2 "></a>
+                    <a href=""> <img src="images/Vector (4).png" alt="" class="px-2 "></a>
+                    <a href=""> <img src="images/Vector (5).png" alt="" class="px-2"></a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-sm-6 ">
+                <div class="card bcard mt-lg-0 mt-3">
+                  <div class="cardmainimg">
+                    <img src="/images/Rectangle 6.png" class="card-img-top" alt="..." />
+                    <div class="tag p-2">
+                      <h3 class="text-white mb-0 px-1">$ 20,000</h3>
+                    </div>
+                  </div>
+                  <div class="card-body card_title">
+                    <a href="">
+                      <p class="text_h">Chevelotte Maike</p>
+                    </a>
+                    <p class="para"> <i class="fa-solid fa-location-dot  card_icon pe-1 "></i>264 Gregory
+                      Ave.Southfield, MI
+                      48076</p>
+                    <div class="  hover-container">
+                      <div class="d-flex justify-content-between hover-trigger">
+                        <p class="card-text light_text">Milage</p>
+                        <p class="card-text text_h">100,325 Kms</p>
+                      </div>
+                      <div class="d-flex justify-content-between hover-trigger">
+                        <p class="card-text light_text">Version</p>
+                        <p class="card-text text_h">Automatic</p>
+                      </div>
+                      <div class="d-flex justify-content-between hover-trigger">
+                        <p class="card-text light_text ">Fuel</p>
+                        <p class="card-text text_h">Petrol</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="d-flex mt-1 justify-content-between">
+                  <div class=" views px-1 ">
+                    <p class="mb-0"><img src="images/Group 10.png" alt="" class="pe-2  mb-0">10k</p>
+                  </div>
+                  <div class="d-flex mt-1 h-100 ">
+                    <a href=""> <img src="images/Vector (3).png" alt="" class="px-2 "></a>
+                    <a href=""><img src="images/Vector (4).png" alt="" class="px-2 "> </a>
+                    <a href=""> <img src="images/Vector (5).png" alt="" class="px-2"> </a>
+                  </div>
+
+                </div>
+              </div>
+              <div class="col-lg-4 col-sm-6 ">
+                <div class="card bcard mt-lg-0 mt-3">
+                  <div class="cardmainimg">
+                    <img src="/images/Rectangle 6.png" class="card-img-top" alt="..." />
+                    <div class="tag p-2">
+                      <h3 class="text-white mb-0 px-1">$ 20,000</h3>
+                    </div>
+                  </div>
+                  <div class="card-body card_title">
+                    <a href="">
+                      <p class="text_h">Chevelotte Maike</p>
+                    </a>
+                    <p class="para"> <i class="fa-solid fa-location-dot  card_icon pe-1 "></i>264 Gregory
+                      Ave.Southfield, MI
+                      48076</p>
+                    <div class="  hover-container">
+                      <div class="d-flex justify-content-between hover-trigger">
+                        <p class="card-text light_text">Milage</p>
+                        <p class="card-text text_h">100,325 Kms</p>
+                      </div>
+                      <div class="d-flex justify-content-between hover-trigger">
+                        <p class="card-text light_text">Version</p>
+                        <p class="card-text text_h">Automatic</p>
+                      </div>
+                      <div class="d-flex justify-content-between hover-trigger">
+                        <p class="card-text light_text ">Fuel</p>
+                        <p class="card-text text_h">Petrol</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="d-flex mt-1 justify-content-between">
+                  <div class=" views px-1 ">
+                    <p class="mb-0"><img src="images/Group 10.png" alt="" class="pe-2  mb-0">10k</p>
+                  </div>
+                  <div class="d-flex mt-1 h-100 ">
+                    <a href=""> <img src="images/Vector (3).png" alt="" class="px-2 "> </a>
+                    <a href=""> <img src="images/Vector (4).png" alt="" class="px-2 "></a>
+                    <a href=""> <img src="images/Vector (5).png" alt="" class="px-2"></a>
+                  </div>
+
+                </div>
+              </div>
+
+            </div>
+            <div class="row mt-lg-3 mt-1 ">
+              <div class="col-lg-4 col-sm-6 ">
+                <div class="card bcard mt-lg-0 mt-3">
+                  <div class="cardmainimg">
+                    <img src="/images/Rectangle 6.png" class="card-img-top" alt="..." />
+                    <div class="tag p-2">
+                      <h3 class="text-white mb-0 px-1">$ 20,000</h3>
+                    </div>
+                  </div>
+                  <div class="card-body card_title">
+                    <a href="">
+                      <p class="text_h">Chevelotte Maike</p>
+                    </a>
+                    <p class="para"> <i class="fa-solid fa-location-dot  card_icon pe-1 "></i>264 Gregory
+                      Ave.Southfield, MI
+                      48076</p>
+                    <div class="  hover-container">
+                      <div class="d-flex justify-content-between hover-trigger">
+                        <p class="card-text light_text">Milage</p>
+                        <p class="card-text text_h">100,325 Kms</p>
+                      </div>
+                      <div class="d-flex justify-content-between hover-trigger">
+                        <p class="card-text light_text">Version</p>
+                        <p class="card-text text_h">Automatic</p>
+                      </div>
+                      <div class="d-flex justify-content-between hover-trigger">
+                        <p class="card-text light_text ">Fuel</p>
+                        <p class="card-text text_h">Petrol</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="d-flex mt-1 justify-content-between">
+                  <div class=" views px-1 ">
+                    <p class="mb-0"><img src="images/Group 10.png" alt="" class="pe-2  mb-0">10k</p>
+                  </div>
+                  <div class="d-flex mt-1 h-100 ">
+                    <a href=""> <img src="images/Vector (3).png" alt="" class="px-2 "></a>
+                    <a href=""> <img src="images/Vector (4).png" alt="" class="px-2 "></a>
+                    <a href=""> <img src="images/Vector (5).png" alt="" class="px-2"></a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-sm-6 ">
+                <div class="card bcard mt-lg-0 mt-3">
+                  <div class="cardmainimg">
+                    <img src="/images/Rectangle 6.png" class="card-img-top" alt="..." />
+                    <div class="tag p-2">
+                      <h3 class="text-white mb-0 px-1">$ 20,000</h3>
+                    </div>
+                  </div>
+                  <div class="card-body card_title">
+                    <a href="">
+                      <p class="text_h">Chevelotte Maike</p>
+                    </a>
+                    <p class="para"> <i class="fa-solid fa-location-dot  card_icon pe-1 "></i>264 Gregory
+                      Ave.Southfield, MI
+                      48076</p>
+                    <div class="  hover-container">
+                      <div class="d-flex justify-content-between hover-trigger">
+                        <p class="card-text light_text">Milage</p>
+                        <p class="card-text text_h">100,325 Kms</p>
+                      </div>
+                      <div class="d-flex justify-content-between hover-trigger">
+                        <p class="card-text light_text">Version</p>
+                        <p class="card-text text_h">Automatic</p>
+                      </div>
+                      <div class="d-flex justify-content-between hover-trigger">
+                        <p class="card-text light_text ">Fuel</p>
+                        <p class="card-text text_h">Petrol</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="d-flex mt-1 justify-content-between">
+                  <div class=" views px-1 ">
+                    <p class="mb-0"><img src="images/Group 10.png" alt="" class="pe-2  mb-0">10k</p>
+                  </div>
+                  <div class="d-flex mt-1 h-100 ">
+                    <a href=""> <img src="images/Vector (3).png" alt="" class="px-2 "></a>
+                    <a href=""><img src="images/Vector (4).png" alt="" class="px-2 "> </a>
+                    <a href=""> <img src="images/Vector (5).png" alt="" class="px-2"> </a>
+                  </div>
+
+                </div>
+              </div>
+              <div class="col-lg-4 col-sm-6 ">
+                <div class="card bcard mt-lg-0 mt-3">
+                  <div class="cardmainimg">
+                    <img src="/images/Rectangle 6.png" class="card-img-top" alt="..." />
+                    <div class="tag p-2">
+                      <h3 class="text-white mb-0 px-1">$ 20,000</h3>
+                    </div>
+                  </div>
+                  <div class="card-body card_title">
+                    <a href="">
+                      <p class="text_h">Chevelotte Maike</p>
+                    </a>
+                    <p class="para"> <i class="fa-solid fa-location-dot  card_icon pe-1 "></i>264 Gregory
+                      Ave.Southfield, MI
+                      48076</p>
+                    <div class="  hover-container">
+                      <div class="d-flex justify-content-between hover-trigger">
+                        <p class="card-text light_text">Milage</p>
+                        <p class="card-text text_h">100,325 Kms</p>
+                      </div>
+                      <div class="d-flex justify-content-between hover-trigger">
+                        <p class="card-text light_text">Version</p>
+                        <p class="card-text text_h">Automatic</p>
+                      </div>
+                      <div class="d-flex justify-content-between hover-trigger">
+                        <p class="card-text light_text ">Fuel</p>
+                        <p class="card-text text_h">Petrol</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="d-flex mt-1 justify-content-between">
+                  <div class=" views px-1 ">
+                    <p class="mb-0"><img src="images/Group 10.png" alt="" class="pe-2  mb-0">10k</p>
+                  </div>
+                  <div class="d-flex mt-1 h-100 ">
+                    <a href=""> <img src="images/Vector (3).png" alt="" class="px-2 "> </a>
+                    <a href=""> <img src="images/Vector (4).png" alt="" class="px-2 "></a>
+                    <a href=""> <img src="images/Vector (5).png" alt="" class="px-2"></a>
+                  </div>
+
+                </div>
+              </div>
+
+            </div>
+            <div class="row mt-lg-3 mt-1 ">
+              <div class="col-lg-4 col-sm-6 ">
+                <div class="card bcard mt-lg-0 mt-3">
+                  <div class="cardmainimg">
+                    <img src="/images/Rectangle 6.png" class="card-img-top" alt="..." />
+                    <div class="tag p-2">
+                      <h3 class="text-white mb-0 px-1">$ 20,000</h3>
+                    </div>
+                  </div>
+                  <div class="card-body card_title">
+                    <a href="">
+                      <p class="text_h">Chevelotte Maike</p>
+                    </a>
+                    <p class="para"> <i class="fa-solid fa-location-dot  card_icon pe-1 "></i>264 Gregory
+                      Ave.Southfield, MI
+                      48076</p>
+                    <div class="  hover-container">
+                      <div class="d-flex justify-content-between hover-trigger">
+                        <p class="card-text light_text">Milage</p>
+                        <p class="card-text text_h">100,325 Kms</p>
+                      </div>
+                      <div class="d-flex justify-content-between hover-trigger">
+                        <p class="card-text light_text">Version</p>
+                        <p class="card-text text_h">Automatic</p>
+                      </div>
+                      <div class="d-flex justify-content-between hover-trigger">
+                        <p class="card-text light_text ">Fuel</p>
+                        <p class="card-text text_h">Petrol</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="d-flex mt-1 justify-content-between">
+                  <div class=" views px-1 ">
+                    <p class="mb-0"><img src="images/Group 10.png" alt="" class="pe-2  mb-0">10k</p>
+                  </div>
+                  <div class="d-flex mt-1 h-100 ">
+                    <a href=""> <img src="images/Vector (3).png" alt="" class="px-2 "></a>
+                    <a href=""> <img src="images/Vector (4).png" alt="" class="px-2 "></a>
+                    <a href=""> <img src="images/Vector (5).png" alt="" class="px-2"></a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-sm-6 ">
+                <div class="card bcard mt-lg-0 mt-3">
+                  <div class="cardmainimg">
+                    <img src="/images/Rectangle 6.png" class="card-img-top" alt="..." />
+                    <div class="tag p-2">
+                      <h3 class="text-white mb-0 px-1">$ 20,000</h3>
+                    </div>
+                  </div>
+                  <div class="card-body card_title">
+                    <a href="">
+                      <p class="text_h">Chevelotte Maike</p>
+                    </a>
+                    <p class="para"> <i class="fa-solid fa-location-dot  card_icon pe-1 "></i>264 Gregory
+                      Ave.Southfield, MI
+                      48076</p>
+                    <div class="  hover-container">
+                      <div class="d-flex justify-content-between hover-trigger">
+                        <p class="card-text light_text">Milage</p>
+                        <p class="card-text text_h">100,325 Kms</p>
+                      </div>
+                      <div class="d-flex justify-content-between hover-trigger">
+                        <p class="card-text light_text">Version</p>
+                        <p class="card-text text_h">Automatic</p>
+                      </div>
+                      <div class="d-flex justify-content-between hover-trigger">
+                        <p class="card-text light_text ">Fuel</p>
+                        <p class="card-text text_h">Petrol</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="d-flex mt-1 justify-content-between">
+                  <div class=" views px-1 ">
+                    <p class="mb-0"><img src="images/Group 10.png" alt="" class="pe-2  mb-0">10k</p>
+                  </div>
+                  <div class="d-flex mt-1 h-100 ">
+                    <a href=""> <img src="images/Vector (3).png" alt="" class="px-2 "></a>
+                    <a href=""><img src="images/Vector (4).png" alt="" class="px-2 "> </a>
+                    <a href=""> <img src="images/Vector (5).png" alt="" class="px-2"> </a>
+                  </div>
+
+                </div>
+              </div>
+              <div class="col-lg-4 col-sm-6 ">
+                <div class="card bcard mt-lg-0 mt-3">
+                  <div class="cardmainimg">
+                    <img src="/images/Rectangle 6.png" class="card-img-top" alt="..." />
+                    <div class="tag p-2">
+                      <h3 class="text-white mb-0 px-1">$ 20,000</h3>
+                    </div>
+                  </div>
+                  <div class="card-body card_title">
+                    <a href="">
+                      <p class="text_h">Chevelotte Maike</p>
+                    </a>
+                    <p class="para"> <i class="fa-solid fa-location-dot  card_icon pe-1 "></i>264 Gregory
+                      Ave.Southfield, MI
+                      48076</p>
+                    <div class="  hover-container">
+                      <div class="d-flex justify-content-between hover-trigger">
+                        <p class="card-text light_text">Milage</p>
+                        <p class="card-text text_h">100,325 Kms</p>
+                      </div>
+                      <div class="d-flex justify-content-between hover-trigger">
+                        <p class="card-text light_text">Version</p>
+                        <p class="card-text text_h">Automatic</p>
+                      </div>
+                      <div class="d-flex justify-content-between hover-trigger">
+                        <p class="card-text light_text ">Fuel</p>
+                        <p class="card-text text_h">Petrol</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="d-flex mt-1 justify-content-between">
+                  <div class=" views px-1 ">
+                    <p class="mb-0"><img src="images/Group 10.png" alt="" class="pe-2  mb-0">10k</p>
+                  </div>
+                  <div class="d-flex mt-1 h-100 ">
+                    <a href=""> <img src="images/Vector (3).png" alt="" class="px-2 "> </a>
+                    <a href=""> <img src="images/Vector (4).png" alt="" class="px-2 "></a>
+                    <a href=""> <img src="images/Vector (5).png" alt="" class="px-2"></a>
+                  </div>
+
+                </div>
+              </div>
+
+            </div>
+            <div class="row mt-lg-3 mt-1 ">
+              <div class="col-lg-4 col-sm-6 ">
+                <div class="card bcard mt-lg-0 mt-3">
+                  <div class="cardmainimg">
+                    <img src="/images/Rectangle 6.png" class="card-img-top" alt="..." />
+                    <div class="tag p-2">
+                      <h3 class="text-white mb-0 px-1">$ 20,000</h3>
+                    </div>
+                  </div>
+                  <div class="card-body card_title">
+                    <a href="">
+                      <p class="text_h">Chevelotte Maike</p>
+                    </a>
+                    <p class="para"> <i class="fa-solid fa-location-dot  card_icon pe-1 "></i>264 Gregory
+                      Ave.Southfield, MI
+                      48076</p>
+                    <div class="  hover-container">
+                      <div class="d-flex justify-content-between hover-trigger">
+                        <p class="card-text light_text">Milage</p>
+                        <p class="card-text text_h">100,325 Kms</p>
+                      </div>
+                      <div class="d-flex justify-content-between hover-trigger">
+                        <p class="card-text light_text">Version</p>
+                        <p class="card-text text_h">Automatic</p>
+                      </div>
+                      <div class="d-flex justify-content-between hover-trigger">
+                        <p class="card-text light_text ">Fuel</p>
+                        <p class="card-text text_h">Petrol</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="d-flex mt-1 justify-content-between">
+                  <div class=" views px-1 ">
+                    <p class="mb-0"><img src="images/Group 10.png" alt="" class="pe-2  mb-0">10k</p>
+                  </div>
+                  <div class="d-flex mt-1 h-100 ">
+                    <a href=""> <img src="images/Vector (3).png" alt="" class="px-2 "></a>
+                    <a href=""> <img src="images/Vector (4).png" alt="" class="px-2 "></a>
+                    <a href=""> <img src="images/Vector (5).png" alt="" class="px-2"></a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-sm-6 ">
+                <div class="card bcard mt-lg-0 mt-3">
+                  <div class="cardmainimg">
+                    <img src="/images/Rectangle 6.png" class="card-img-top" alt="..." />
+                    <div class="tag p-2">
+                      <h3 class="text-white mb-0 px-1">$ 20,000</h3>
+                    </div>
+                  </div>
+                  <div class="card-body card_title">
+                    <a href="">
+                      <p class="text_h">Chevelotte Maike</p>
+                    </a>
+                    <p class="para"> <i class="fa-solid fa-location-dot  card_icon pe-1 "></i>264 Gregory
+                      Ave.Southfield, MI
+                      48076</p>
+                    <div class="  hover-container">
+                      <div class="d-flex justify-content-between hover-trigger">
+                        <p class="card-text light_text">Milage</p>
+                        <p class="card-text text_h">100,325 Kms</p>
+                      </div>
+                      <div class="d-flex justify-content-between hover-trigger">
+                        <p class="card-text light_text">Version</p>
+                        <p class="card-text text_h">Automatic</p>
+                      </div>
+                      <div class="d-flex justify-content-between hover-trigger">
+                        <p class="card-text light_text ">Fuel</p>
+                        <p class="card-text text_h">Petrol</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="d-flex mt-1 justify-content-between">
+                  <div class=" views px-1 ">
+                    <p class="mb-0"><img src="images/Group 10.png" alt="" class="pe-2  mb-0">10k</p>
+                  </div>
+                  <div class="d-flex mt-1 h-100 ">
+                    <a href=""> <img src="images/Vector (3).png" alt="" class="px-2 "></a>
+                    <a href=""><img src="images/Vector (4).png" alt="" class="px-2 "> </a>
+                    <a href=""> <img src="images/Vector (5).png" alt="" class="px-2"> </a>
+                  </div>
+
+                </div>
+              </div>
+              <div class="col-lg-4 col-sm-6 ">
+                <div class="card bcard mt-lg-0 mt-3">
+                  <div class="cardmainimg">
+                    <img src="/images/Rectangle 6.png" class="card-img-top" alt="..." />
+                    <div class="tag p-2">
+                      <h3 class="text-white mb-0 px-1">$ 20,000</h3>
+                    </div>
+                  </div>
+                  <div class="card-body card_title">
+                    <a href="">
+                      <p class="text_h">Chevelotte Maike</p>
+                    </a>
+                    <p class="para"> <i class="fa-solid fa-location-dot  card_icon pe-1 "></i>264 Gregory
+                      Ave.Southfield, MI
+                      48076</p>
+                    <div class="  hover-container">
+                      <div class="d-flex justify-content-between hover-trigger">
+                        <p class="card-text light_text">Milage</p>
+                        <p class="card-text text_h">100,325 Kms</p>
+                      </div>
+                      <div class="d-flex justify-content-between hover-trigger">
+                        <p class="card-text light_text">Version</p>
+                        <p class="card-text text_h">Automatic</p>
+                      </div>
+                      <div class="d-flex justify-content-between hover-trigger">
+                        <p class="card-text light_text ">Fuel</p>
+                        <p class="card-text text_h">Petrol</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="d-flex mt-1 justify-content-between">
+                  <div class=" views px-1 ">
+                    <p class="mb-0"><img src="images/Group 10.png" alt="" class="pe-2  mb-0">10k</p>
+                  </div>
+                  <div class="d-flex mt-1 h-100 ">
+                    <a href=""> <img src="images/Vector (3).png" alt="" class="px-2 "> </a>
+                    <a href=""> <img src="images/Vector (4).png" alt="" class="px-2 "></a>
+                    <a href=""> <img src="images/Vector (5).png" alt="" class="px-2"></a>
+                  </div>
+
+                </div>
+              </div>
+
+            </div>
+
+
+
+          </div>
+          <!-- saved section end  -->
+
+          <!-- notification section start  -->
+          <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
+            <div class="row px-lg-3  p-2 ">
+              <h4 class="mb-3 pb-4">Today</h4>
+              <div class="card border-0">
+                <div class="card-body card_content">
+                  <i class="fa-solid fa-circle active_status"></i>
+                  <p class="card-text para m-0 p-0 ">This card has supporting text below as a natural lead-in to
+                    additional content.
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae </p>
+                  <p class="card-text muted_text"><small class="text-muted  text-align-end">Last updated 3 mins
+                      ago</small></p>
+                </div>
+              </div>
+            </div>
+            <div class="row px-lg-3  p-2 mt-3">
+
+              <div class="card border-0">
+                <div class="card-body card_content">
+                  <i class="fa-solid fa-circle active_status"></i>
+                  <p class="card-text para m-0 p-0 ">This card has supporting text below as a natural lead-in to
+                    additional content.
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae </p>
+                  <p class="card-text muted_text"><small class="text-muted  text-align-end">Last updated 3 mins
+                      ago</small></p>
+                </div>
+              </div>
+            </div>
+            <div class="row px-lg-3  p-2 mt-3">
+
+              <div class="card border-0">
+                <div class="card-body card_content">
+                  <i class="fa-solid fa-circle active_status"></i>
+                  <p class="card-text para m-0 p-0 ">This card has supporting text below as a natural lead-in to
+                    additional content.
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae </p>
+                  <p class="card-text muted_text"><small class="text-muted  text-align-end">Last updated 3 mins
+                      ago</small></p>
+                </div>
+              </div>
+            </div>
+            <div class="row px-lg-3  p-2 mt-3">
+              <h4 class="mb-3">Yesterday</h4>
+              <div class="card border-0">
+                <div class="card-body card_content">
+                  <i class="fa-solid fa-circle active_status"></i>
+                  <p class="card-text para m-0 p-0 ">This card has supporting text below as a natural lead-in to
+                    additional content.
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae </p>
+                  <p class="card-text muted_text"><small class="text-muted  text-align-end">Last updated 3 mins
+                      ago</small></p>
+                </div>
+              </div>
+            </div>
+            <div class="row px-lg-3  p-2 mt-3">
+              <div class="card border-0">
+                <div class="card-body card_content">
+                  <i class="fa-solid fa-circle active_status"></i>
+                  <p class="card-text para m-0 p-0 ">This card has supporting text below as a natural lead-in to
+                    additional content.
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae </p>
+                  <p class="card-text muted_text"><small class="text-muted  text-align-end">Last updated 3 mins
+                      ago</small></p>
+                </div>
+              </div>
+            </div>
+
+            <div class="row px-lg-3  p-2 mt-3">
+
+              <div class="card border-0">
+                <div class="card-body card_content">
+                  <i class="fa-solid fa-circle active_status"></i>
+                  <p class="card-text para m-0 p-0 ">This card has supporting text below as a natural lead-in to
+                    additional content.
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae </p>
+                  <p class="card-text muted_text"><small class="text-muted  text-align-end">Last updated 3 mins
+                      ago</small></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- notification section end  -->
+
+          <!-- message section start  -->
+          <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">
+            <div class="row px-lg-3 p-2 mt-3">
+              <div class="card border-0 ">
+                <div class="card-body  d-flex">
+                  <div>
+                    <img src="images/Frame 3293.png" alt="" class="w-75">
+                  </div>
+                  <div class="px-1">
+                    <p class="card-text para2 m-0 p-0 ">Lorem, ipsum. </p>
+                    <p class="card-text "><small class="text-muted  text-align-start">Last active 3 mins
+                        ago</small></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row px-lg-3 p-2 mt-3">
+              <div class="card border-0 ">
+                <div class="card-body  d-flex">
+                  <div>
+                    <img src="images/Frame 3293 (1).png" alt="" class="w-75">
+                  </div>
+                  <div class="px-1">
+                    <p class="card-text para2 m-0 p-0 ">Lorem, ipsum.
+                    </p>
+                    <p class="card-text "><small class="text-muted  text-align-start">Last updated 3 mins
+                        ago</small></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row px-lg-3 p-2 mt-3">
+              <div class="card border-0 ">
+                <div class="card-body  d-flex">
+                  <div class="active_user">
+                    <img src="images/Frame 3293 (2).png" alt="" class="w-75">
+                    <i class="fa-solid fa-circle active_icon"></i>
+                  </div>
+                  <div class="px-1">
+                    <p class="card-text para2 m-0 p-0 ">Lorem. </p>
+                    <p class="card-text "><small class="text-muted  text-align-start">Last updated 3 mins
+                        ago</small></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row px-lg-3 p-2 mt-3">
+              <div class="card border-0 ">
+                <div class="card-body  d-flex">
+                  <div class="">
+                    <img src="images/Frame 3293 (2).png" alt="" class="w-75">
+
+                  </div>
+                  <div class="px-1">
+                    <p class="card-text para2 m-0 p-0 ">Lorem.</p>
+                    <p class="card-text "><small class="text-muted  text-align-start">Last updated 3 mins
+                        ago</small></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row px-lg-3 p-2 mt-3">
+              <div class="card border-0 ">
+                <div class="card-body  d-flex">
+                  <div class="active_user">
+                    <img src="images/Frame 3293 (3).png" alt="" class="w-75">
+                    <i class="fa-solid fa-circle active_icon"></i>
+                  </div>
+                  <div class="px-1">
+                    <p class="card-text para2 m-0 p-0 ">Lorem, ipsum. </p>
+                    <p class="card-text "><small class="text-muted  text-align-start">Last updated 3 mins
+                        ago</small></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- message section end  -->
+
+          <!-- log out section start  -->
+          <div class="tab-pane fade" id="v-pills-log" role="tabpanel" aria-labelledby="v-pills-log-tab">
+
+            <div class="row logout_row px-lg-3 p-2 mb-5 ">
+              <div class="logout">
+
+                <div class="wrapper">
+                  <form class="p-3 mt-3">
+                    <div class="form-field d-flex align-items-center">
+                      <span class="far fa-user"></span>
+                      <input type="text" name="userName" id="userName" placeholder="Username">
+                    </div>
+                    <div class="form-field d-flex align-items-center">
+                      <span class="fas fa-key"></span>
+                      <input type="password" name="password" id="pwd" placeholder="Password">
+
+                    </div>
+                    <div class="text-end mb-3 mt-0 fs-6">
+                      <a href="#">Forget password?</a>
+                    </div>
+
+                    <button class="btn mt-3">Login</button>
+                  </form>
+
+                </div>
+
+
+              </div>
+            </div>
+          </div>
+          <!-- logoit section end  -->
+
+          <!-- subscription section start  -->
+
+          <div class="tab-pane fade" id="v-pills-sub" role="tabpanel" aria-labelledby="v-pills-sub-tab">
+
+            <div class="row px-lg-3 p-2 mb-5 ">
+              <h4 class="mb-3">Subscription</h4>
+              <div class="col-lg-6">
+                <div class="card  other_card  mt-lg-0 mt-3">
+                  <div class="d-flex justify-content-center align-item-center mt-3">
+                    <img src="/images/pngwing 2.png" class=" m-0" alt="..." />
+
+                  </div>
+                  <h2 class="text-center mt-2 card_text">Elite</h2>
+                  <div class="card-body card_title">
+
+                    <div class="  hover-container">
+                      <div class="d-flex justify-content-between hover-trigger">
+                        <p class="card-text text_h">Subscription date</p>
+                        <p class="card-text ">May 12, 2023</p>
+                      </div>
+                      <div class="d-flex justify-content-between hover-trigger">
+                        <p class="card-text text_h">Next Renewal</p>
+                        <p class="card-text ">May 12, 2024</p>
+                      </div>
+                      <div class="d-flex justify-content-between hover-trigger">
+                        <p class="card-text text_h">Amount paid</p>
+                        <p class="card-text price">$250.00</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row px-lg-3 p-2 mb-5 mt-3">
+              <h4 class="mb-3">other</h4>
+              <div class="col-md-4 mt-3 mt-md-0">
+                <div class="card  other_card  h-100">
+                  <div class="d-flex justify-content-center align-item-center mt-3">
+                    <img src="/images/pngwing (2).png" class="  m-0" alt="..." />
+
+                  </div>
+                  <h2 class="text-center mt-2 bronze">BRONZE</h2>
+                  <div class="card-body card_title">
+
+                    <ul>
+                      <li>
+                        User can post only 25 ads.
+                      </li>
+                      <li>
+                        <b>$15.0/month</b>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 mt-3 mt-md-0">
+                <div class="card  other_card h-100">
+                  <div class="d-flex justify-content-center align-item-center mt-3">
+                    <img src="/images/pngwing (4).png" class="  m-0" alt="..." />
+
+                  </div>
+                  <h2 class="text-center mt-2 silver">SILVER</h2>
+                  <div class="card-body card_title">
+
+                    <ul>
+                      <li>
+                        User can post only 25 ads.
+                      </li>
+                      <li>
+                        <b>$15.0/month</b>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 mt-3 mt-md-0">
+                <div class="card  other_card  h-100">
+                  <div class="d-flex justify-content-center align-item-center mt-3">
+                    <img src="/images/pngwing (5).png" class="  m-0" alt="..." />
+
+                  </div>
+                  <h2 class="text-center mt-2  gold">GOLD</h2>
+                  <div class="card-body card_title">
+
+                    <ul>
+                      <li>
+                        User can post only 25 ads.
+                      </li>
+                      <li>
+                        <b>$15.0/month</b>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+          </div>
+          <!-- subscription section End -->
+
+          <!-- my balance section start  -->
+          <div class="tab-pane fade" id="v-pills-balance" role="tabpanel" aria-labelledby="v-pills-balance-tab">
+
+            <div class="row px-lg-3 p-2 mb-5 ">
+              <div class="col-md-1">
+              </div>
+              <div class="col-md-4 ">
+                <div class="balance  text-center mb-5">
+                  <p class="pt-4">Current Banalce</p>
+                  <h4 class="b_amount pb-4"> $ 2,500.00</h4>
+                </div>
+                <div class="d-flex justify-content-center">
+                  <button class="recharge mb-5">Recharge</button>
+                </div>
+              </div>
+              <div class="col-md-1"></div>
+              <div class="col-md-6">
+
+                <div class="history px-5 py-2 mt-3">
+                  <h4 class="text-center mb-5">History</h4>
+                  <div class="row">
+                    <div class="col-6">
+                      <p>$250</p>
+                      <p>$250</p>
+                      <p>$250</p>
+                      <p>$250</p>
+                      <p>$250</p>
+                      <p>$250</p>
+                      <p>$250</p>
+                      <p>$250</p>
+                      <p>$250</p>
+                      <p>$250</p>
+                      <p>$250</p>
+
+
+                    </div>
+                    <div class="col-6">
+                      <p class="text-end">May 01, 2023</p>
+                      <p class="text-end">May 01, 2023</p>
+                      <p class="text-end">May 01, 2023</p>
+                      <p class="text-end">May 01, 2023</p>
+                      <p class="text-end">May 01, 2023</p>
+                      <p class="text-end">May 01, 2023</p>
+                      <p class="text-end">May 01, 2023</p>
+                      <p class="text-end">May 01, 2023</p>
+                      <p class="text-end">May 01, 2023</p>
+                      <p class="text-end">May 01, 2023</p>
+                      <p class="text-end">May 01, 2023</p>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+          </div>
+          <!-- my balamce section end  -->
+
+          <!-- Setting section start -->
+          <div class="tab-pane fade" id="v-pills-st" role="tabpanel" aria-labelledby="v-pills-st-tab">
+            <div class="row px-lg-3 p-2 pt-0 mb-5 ">
+              <div class="col-md-4 profile_title">
+                <p class="profile_title">Your Profile Picture</p>
+                <div class="profile_pic text-center pt-4 pb-3">
+                  <img src="images/gallery-add (1).png" alt="">
+                  <p class="mt-3">Upload your photo</p>
+                </div>
+              </div>
+              <div class="col-md-1"></div>
+              <div class="col-md-7">
+                <form>
+                  <div class="form-group ">
+                    <label for="exampleFormControlInput1" class=" form_label mb-2 mt-4">Full Name</label>
+                    <input type="text" class="form-control form_input p-3" id="exampleFormControlInput1"
+                      placeholder="Please enter your full name">
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleFormControlInput1 " class=" form_label mb-2 mt-4">Username</label>
+                    <input type="text" class="form-control   form_input p-3" id="exampleFormControlInput1"
+                      placeholder="Please enter your username">
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleFormControlInput1" class=" form_label mb-2 mt-4">Email </label>
+                    <input type="email" class="form-control p-3  form_input" id="exampleFormControlInput1"
+                      placeholder="Please enter your email">
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleFormControlInput1" class=" form_label mb-2 mt-4">Phone number </label>
+                    <input type="text" class="form-control p-3  form_input" id="exampleFormControlInput1"
+                      placeholder="Please enter your phone number">
+                  </div>
+
+                  <div class="form-group">
+                    <label for="exampleFormControlTextarea1" class=" form_label mb-2 mt-4">Bio</label>
+                    <textarea class="form-control p-3  form_input" id="exampleFormControlTextarea1"
+                      placeholder="Write your Bio here e.g your hobbies, interests ETC" rows="3"></textarea>
+                  </div>
+                </form>
+
+                <div class=" d-flex mt-5">
+                  <button class="recharge mb-5 me-3">Update Profile</button>
+                  <button class="reset border-0 px-5 mb-5">Reset</button>
+                </div>
+              </div>
+            </div>
+            <div class="row px-lg-3 p-2 pt-0 mb-5 ">
+              <div class="col-md-2"></div>
+
+              <div class="col-md-10">
+                <div class="row">
+                  <!-- first column -->
+                  <div class="col-md-6">
+                    <h3 class="mt-3">Setting</h3>
+                    <div class="row mt-3 ">
+                      <h5>Email Preference</h5>
+                      <div class="col-6 mt-3">
+                        <p>Weekly Summary</p>
+                        <p>Daily News</p>
+                        <p>New Listing</p>
+                        <p>Message</p>
+                        <p>Information</p>
+                      </div>
+
+                      <div class="col-6 d-flex  flex-column  justify-content-end  align-items-end">
+                        <div class="form-check form-switch mt-4">
+                          <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" />
+                        </div>
+                        <div class="form-check form-switch mt-3">
+                          <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" />
+                        </div>
+                        <div class="form-check form-switch mt-3">
+                          <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" />
+                        </div>
+                        <div class="form-check form-switch mt-3">
+                          <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" />
+                        </div>
+                        <div class="form-check form-switch mt-3">
+                          <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" />
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+                  <!-- second column -->
+                  <div class="col-md-6  mt-3  d-flex  flex-column  justify-content-end  align-items-end">
+                    <div class="row mt-3">
+                      <h5>Email Preference</h5>
+                      <div class="col-md-6 mt-3">
+                        <p>Weekly Summary</p>
+                        <p>Daily News</p>
+                        <p>New Listing</p>
+                        <p>Message</p>
+                        <p>Information</p>
+                      </div>
+
+                      <div class="col-md-6  d-flex  flex-column  justify-content-end  align-items-end">
+                        <div class="form-check form-switch mt-4">
+                          <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" />
+                        </div>
+                        <div class="form-check form-switch mt-3">
+                          <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" />
+                        </div>
+                        <div class="form-check form-switch mt-3">
+                          <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" />
+                        </div>
+                        <div class="form-check form-switch mt-3">
+                          <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" />
+                        </div>
+                        <div class="form-check form-switch mt-3">
+                          <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" />
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+
+
+              </div>
+            </div>
+          </div>
+          <!-- sectting section end  -->
+          <!-- performance section start -->
+          <div class="tab-pane fade" id="v-pills-perfm" role="tabpanel" aria-labelledby="v-pills-perfm-tab">
+         
+         <div class="date_main d-flex justify-content-end align-items-end">  
+          <div class="date text-center d-flex text-center justify-content-center ">
+              <p class="text-center">May 1, 2023-May 28, 2023</p>
+            </div>
+          </div> 
+            <div class="row px-lg-3 p-2 pt-0 mb-5 ">
+
+              <div class="graph">
+                <img src="images/Vector 110 (1).png" alt=" " class="w-100">
+              </div>
+            </div>
+            <div class=" row chart_views d-flex justify-content-between  ">
+              <div class="  col-6  mt-3 mt-md-0 col-md-3">
+              <div class="Impressions">
+                <h4>210k</h4>
+                <p>Impressions</p>
+              </div>
+            </div>
+              <div class=" col-6 mt-3 mt-md-0  col-md-3  ">
+                <div class="Visitors ">
+                <h4>56k</h4>
+                <p>Visitors</p>
+              </div>
+              </div>
+              <div class="  col-6 mt-3 mt-md-0  col-md-3   ">
+                <div class="phone">
+                <h4>190k</h4>
+                <p>Phone Views</p>
+              </div>
+              </div>
+              <div class=" col-6 mt-3 mt-md-0  col-md-3  ">
+                <div class="chat">
+                <h4>10k</h4>
+                <p>Chat Requests</p>
+              </div>
+            </div>
+          </div>
+          </div>
+
+        </div>
+        <!-- performance section end  -->
+      </div>
+
+
+
+
+    </div>
+
+  </div>
+
+  </div>
+  </div>
+  </div>
+  </div>
+
+
+  <!-- side bar whole section end  -->
+
+  <!-- footer -->
+
+  <section class="mt-5">
+    <!-- Footer -->
+    <footer class="footer_bg text-white text-center text-md-start">
+      <!-- Grid container -->
+      <div class="container p-5 mt-5">
+        <!--Grid row-->
+        <div class="row">
+
+          <!--Grid column-->
+
+          <!--Grid column-->
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase">Company</h5>
+
+            <ul class="list-unstyled mb-0">
+              <li class="mt-3">
+                <a href="#!" class="">About Us</a>
+              </li>
+              <li class="mt-3">
+                <a href="#!" class="">Why Choose us</a>
+              </li>
+              <li class="mt-3">
+                <a href="#!" class="">Pricing</a>
+              </li>
+              <li class="mt-3">
+                <a href="#!" class="">Testimonial</a>
+              </li>
+            </ul>
+          </div>
+          <!--Grid column-->
+
+          <!--Grid column-->
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase mb-0">Resources</h5>
+
+            <ul class="list-unstyled">
+              <li class="mt-3">
+                <a href="#!" class="">Privacy Policy</a>
+              </li>
+              <li class="mt-3">
+                <a href="#!" class="">Terms and Condition</a>
+              </li>
+              <li class="mt-3">
+                <a href="#!" class="">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+          <!--Grid column-->
+          <!--Grid column-->
+          <div class="col-lg-6 col-md-12 mb-4 mb-md-0 ">
+            <h1 class="">List AT</h1>
+
+            <p class="newsletter">
+              Subscribe to our Newsletter
+            </p>
+            <div class="d-sm-block d-none">
+              <input class="footer_input " type="text" name="" placeholder="Enter your Email">
+              <button class="subscribe_btn ">Subscribe</button>
+            </div>
+            <div class="d-sm-none d-block">
+              <input class="footer_input_res " type="text" name="" placeholder="Enter your Email">
+              <button class="subscribe_btn_res ">Subscribe</button>
+            </div>
+          </div>
+        </div>
+        <!--Grid row-->
+      </div>
+      <!-- Grid container -->
+
+      <!-- Copyright -->
+      <div class="text-center p-3 footer_bg">
+
+        <a class="text-white" href="https://mdbootstrap.com/">Copyright @2023</a>
+      </div>
+      <!-- Copyright -->
+      <section class="mb-4 d-flex justify-content-center align-item-center ">
+        <!-- Facebook -->
+        <a class="btn btn-link btn-floating btn-lg footer_icon  m-1" href="#!" role="button"
+          data-mdb-ripple-color=""><img src="images/Facebook.png" alt=""></a>
+
+        <!-- Twitter -->
+        <a class="btn btn-link btn-floating btn-lg footer_icon   m-1" href="#!" role="button"
+          data-mdb-ripple-color="dark"><img src="images/Twitter.png" alt=""></i></a>
+
+
+
+        <!-- Instagram -->
+        <a class="btn btn-link btn-floating btn-lg footer_icon   m-1" href="#!" role="button"
+          data-mdb-ripple-color="dark"><img src="images/Instagram.png" alt=""></a>
+
+        <!-- Linkedin -->
+        <a class="btn btn-link btn-floating btn-lg  footer_icon  m-1" href="#!" role="button"
+          data-mdb-ripple-color="light"><img src="images/LinkedIn.png" alt=""></a>
+      </section>
+    </footer>
+    <!-- Footer -->
+  </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- <nav class="navbar navbar-expand-lg ">
+        <div class="container px-5">
+          <a class="navbar-brand" href="#"><img src="images/LOGO.png" alt=""></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Categories
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Blogs</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#"><img src="images/LR.png" alt=""></a>
+              </li>
+              <div class="searchbar">
+                <input class="search_input" type="text" name="" placeholder="Search...">
+                <a href="#" class="search_icon"><i class="fas fa-search"></i></a>
+              </div>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#"><img src="images/Group 133672.png" alt=""></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#"><img src="images/Group 133671.png" alt=""></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#"><img src="images/Ellipse 47.png" alt=""></a>
+              </li>
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </ul>
+          </div>
+        </div>
+      </nav> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
